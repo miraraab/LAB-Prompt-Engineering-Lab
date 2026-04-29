@@ -26,3 +26,4 @@ formatting wrong or thinking wrong? In production, these techniques
 only work reliably when combined with systematic testing across at 
 least 15 runs and a clear evaluation metric defined before writing 
 any prompt — because a prompt that works once proves nothing.
+How I will remember the learnings: pdf creation by Claude https://drive.google.com/drive/folders/1Ta4bGZ8Gb1PiR0GL8r8Ex6VWD5R8pIrQ
