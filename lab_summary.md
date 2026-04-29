@@ -12,3 +12,17 @@ wrong way can hide real progress: creative tasks need to be judged on
 structure and format, not on whether every word matches exactly. Next 
 time, I would define what "good output" looks like before writing a 
 single prompt.
+
+and to go a bit more into detail:
+Moving from v1 to v3, the most impactful step was simply adding 
+format constraints — one rule like "respond with exactly one word" 
+moved Sentiment from 26% to 100% without a single example, proving 
+that most prompt failures are structural, not conceptual. Few-shot 
+prompting fixed format problems by showing the model a complete 
+pattern to follow, while Chain-of-Thought fixed reasoning problems 
+by forcing the model to think step by step before outputting — 
+choosing between them comes down to one question: is the model 
+formatting wrong or thinking wrong? In production, these techniques 
+only work reliably when combined with systematic testing across at 
+least 15 runs and a clear evaluation metric defined before writing 
+any prompt — because a prompt that works once proves nothing.
